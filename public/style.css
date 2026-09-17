@@ -1,0 +1,50 @@
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Arial, sans-serif; }
+body { background: #fafafa; color: #222; }
+
+.navbar { display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; background: #ff7a45; color: white; }
+.navbar .logo { font-size: 1.4rem; font-weight: bold; }
+.nav-links a, .nav-links span { color: white; margin-left: 1rem; text-decoration: none; }
+.btn-primary { background: white; color: #ff7a45; border: none; padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-weight: bold; text-decoration: none; }
+.btn-primary.large { padding: 0.8rem 2rem; font-size: 1.1rem; display: inline-block; margin-top: 1rem; }
+
+.hero { text-align: center; padding: 4rem 2rem; background: linear-gradient(135deg, #ffedd5, #fff); }
+.hero h1 { font-size: 2.2rem; margin-bottom: 1rem; }
+.hero p { max-width: 600px; margin: 0 auto; color: #555; }
+
+.features, .audience, .how-it-helps, .roadmap { padding: 3rem 2rem; text-align: center; }
+.feature-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem; margin-top: 1.5rem; }
+.feature-card { background: white; border-radius: 10px; padding: 1.5rem; width: 220px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+
+.roadmap ul { list-style: none; margin-top: 1rem; }
+.roadmap li { margin: 0.5rem 0; }
+
+footer { text-align: center; padding: 1.5rem; background: #222; color: white; }
+
+.auth-box { max-width: 380px; margin: 5rem auto; background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); text-align: center; }
+.auth-box input { width: 100%; padding: 0.6rem; margin: 0.5rem 0; border: 1px solid #ddd; border-radius: 6px; }
+.auth-box .btn-primary { background: #ff7a45; color: white; width: 100%; padding: 0.7rem; margin-top: 0.5rem; }
+.message { color: red; margin-top: 0.5rem; min-height: 1.2rem; }
+
+.dashboard-container { max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
+.add-customer-box { background: white; padding: 1.5rem; border-radius: 10px; margin-bottom: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+.add-customer-box form { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+.add-customer-box input { flex: 1; padding: 0.5rem; border: 1px solid #ddd; border-radius: 6px; }
+
+.controls { display: flex; gap: 1rem; margin-bottom: 1rem; flex-wrap: wrap; }
+.controls input, .controls select { padding: 0.5rem; border: 1px solid #ddd; border-radius: 6px; }
+.controls input { flex: 1; min-width: 200px; }
+
+table { width: 100%; border-collapse: collapse; background: white; border-radius: 10px; overflow: hidden; }
+th, td { padding: 0.8rem; text-align: left; border-bottom: 1px solid #eee; }
+th { background: #ff7a45; color: white; }
+td button { margin-right: 0.4rem; padding: 0.3rem 0.6rem; border: none; border-radius: 5px; cursor: pointer; background: #eee; }
+
+.pagination { display: flex; gap: 0.5rem; margin-top: 1rem; justify-content: center; }
+.pagination button { padding: 0.4rem 0.8rem; border: 1px solid #ddd; background: white; border-radius: 6px; cursor: pointer; }
+.pagination button.active-page { background: #ff7a45; color: white; }
+
+.modal { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); display: flex; align-items: center; justify-content: center; }
+.modal.hidden { display: none; }
+.modal-content { background: white; padding: 2rem; border-radius: 10px; width: 320px; text-align: center; }
+.modal-content select, .modal-content input { width: 100%; padding: 0.5rem; margin: 0.5rem 0; border: 1px solid #ddd; border-radius: 6px; }
+.modal-content button { padding: 0.5rem 1rem; margin: 0.3rem; border-radius: 6px; border: none; cursor: pointer; }

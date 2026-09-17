@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dashboard — TiffinSub</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">🍱 TiffinSub</div>
+    <div class="nav-links">
+      <span id="welcomeMsg"></span>
+      <button id="logoutBtn" class="btn-primary">Logout</button>
+    </div>
+  </nav>
+
+  <div class="dashboard-container">
+    <section class="add-customer-box">
+      <h3>Add New Customer</h3>
+      <form id="addCustomerForm">
+        <input type="text" id="custName" placeholder="Customer Name" required />
+        <input type="text" id="custPhone" placeholder="Phone Number" />
+        <button type="submit" class="btn-primary">Add Customer</button>
+      </form>
+    </section>
+
+    <section class="controls">
+      <input type="text" id="searchInput" placeholder="Search by name or phone..." />
+      <select id="sortBy">
+        <option value="created_at">Sort: Newest</option>
+        <option value="name">Sort: Name</option>
+        <option value="phone">Sort: Phone</option>
+      </select>
+      <select id="order">
+        <option value="desc">Descending</option>
+        <option value="asc">Ascending</option>
+      </select>
+    </section>
+
+    <section>
+      <table id="customerTable">
+        <thead>
+          <tr><th>Name</th><th>Phone</th><th>Actions</th></tr>
+        </thead>
+        <tbody id="customerTableBody"></tbody>
+      </table>
+      <div class="pagination" id="pagination"></div>
+    </section>
+  </div>
+
+  <!-- Subscribe Modal -->
+  <div id="subscribeModal" class="modal hidden">
+    <div class="modal-content">
+      <h3>Subscribe Customer</h3>
+      <select id="planSelect"></select>
+      <input type="number" id="durationDays" placeholder="Duration (days)" min="1" />
+      <button id="confirmSubscribe" class="btn-primary">Subscribe</button>
+      <button id="closeModal">Cancel</button>
+      <p id="subscribeResult"></p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
